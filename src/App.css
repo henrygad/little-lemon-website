@@ -1,0 +1,409 @@
+.main_nav{
+    display: flex;
+    align-items: center;
+    grid-gap: 20px;
+    height: 81px;
+}
+.header_logo{
+    width: 210px;
+}
+.header_logo img{
+    width: 204px;
+    object-fit: cover;
+}
+.header_nav_list{
+    flex: 1 0 600px;
+    margin-left: 50px;
+}
+.header_nav_list ul{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.header_nav_list ul li{
+    list-style: none;
+}
+.header_nav_list ul li a{
+   text-decoration: none;
+   font-family: var(--secondary-text-style);
+   font-size: 20px;
+   font-weight: 700;
+   text-transform: capitalize;
+   color: var(--text-color);
+}
+
+/* end of header */
+
+/* start of hero section */
+.hero_content{
+    flex: 1 0  422px;
+    height: 217px;
+}
+.hero_content .text{
+    width: 422px;
+    height: 217px;
+}
+.hero_content .text h1{
+    font-size: 64px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.hero_content .text h2{
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #fff;
+}
+.hero_content .text p{
+    width: 450px;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #fff;
+    margin-top: 25px;
+}
+.hero_content .btn{
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+}
+.hero_img{
+    display: flex;
+    justify-content: flex-end;
+    flex:  1 0  393px;
+    height: 444px;
+}
+.hero_img .img{
+    width:  386px;
+    height: inherit;
+}
+.hero_img .img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 20px;
+}
+/* end of hero section */
+
+/* start of home products section */
+.home_products.title_and_btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+
+.home_products.title_and_btn h2{
+    color: #000;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.home_products.products_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    width: auto;
+    height: auto;
+    margin-top: 50px;;
+}
+.home_products.products_grid > div{
+    height: 439px;
+    background-color: var(--primary-color);
+    border-radius: 20px 20px 0 0;
+    transition: all .25 ease-in-out;
+    cursor: pointer;
+}
+.home_products.products_grid > div:hover{
+    opacity: .5;
+}
+.home_products.products_grid > div .content{
+    position: relative;
+    height: inherit;
+    width: inherit;
+}
+.home_products.products_grid > div .content div:nth-child(1){
+    width: auto;
+    height: auto;
+}
+.home_products.products_grid > div .content div:nth-child(1) img{
+   width: 100%;
+   height: 185.258px;
+   object-fit: cover;
+   border: 0;
+   border-radius: 20px 20px 0 0;
+}
+.home_products.products_grid > div .content div:nth-child(2){
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    margin-top: 10px;
+}
+.home_products.products_grid > div .content div:nth-child(2) h3{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 90%;
+}
+.home_products.products_grid > div .content div:nth-child(2) p{
+    color: #EE9972;
+}
+.home_products.products_grid > div .content div:nth-child(3){
+    height: auto;
+    width: auto;
+    padding: 0 30px;
+    margin-top: 20px;   
+}
+.home_products.products_grid > div .content div:nth-child(3) p{ 
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+}
+.home_products.products_grid > div .content div:nth-child(4){
+    position: absolute;
+    bottom: 20px;
+    height: auto;
+    width: auto;
+    display: flex;
+    grid-gap: 40px;
+    align-items: center;
+    padding: 0 30px;
+}
+.home_products.products_grid > div .content div:nth-child(4) p{
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* end of home product section */
+
+
+/* strat of clients reviews section*/
+
+.client_reviews_grid{
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+    align-items: center;
+}
+.client_reviews_grid > div{
+    height: 175px;
+    border: 0;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.client_reviews_grid > div:hover{
+    opacity: .9;
+}
+.client_reviews_grid > div .content{
+    height: inherit;
+    width: inherit;
+}
+.client_reviews_grid > div .content div:nth-child(1){
+    height: auto;
+    width: auto;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+.client_reviews_grid > div .content div:nth-child(1) img{
+    height: 16px;
+    width: auto;
+    object-fit: cover;
+}
+.client_reviews_grid > div .content div:nth-child(2){
+    height: auto;
+    width: auto;
+    display: flex;
+    grid-gap: 20px;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 15px;
+}
+.client_reviews_grid > div .content div:nth-child(2) img{
+     height: 46px;
+     width: auto;
+     border: 0;
+     border-radius: 10px;
+     object-fit: cover;
+}
+.client_reviews_grid > div .content div:nth-child(2) h3{
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 700;
+}
+.client_reviews_grid > div .content div:nth-child(3){
+    width: auto;
+    height: auto;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+.client_reviews_grid > div .content div:nth-child(3) p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* end of reviews section */
+
+/* start of about section */
+.about_section.one{
+    flex: 1 0 373px;
+    height: 468px;
+}
+.about_section.one .text{
+    height: auto;
+    width: auto;
+}
+.about_section.one .text .heading{
+    height: auto;
+    width: auto;
+    margin-top: 5px;
+}
+.about_section.one .text .headings h4{
+    color: #000;
+    font-family: var(--primary-text-style);
+    font-size: 64px;
+    font-weight: 500;
+}
+.about_section.one .text .headings h5{
+    color: #333;
+    font-family: var(--secondary-text-style);
+    font-size: 40px;
+    font-weight: 400;
+}
+.about_section.one .paragraph{
+    height: auto;
+    width: auto;
+    padding: 0 50px 0 0;
+    margin-top: 40px;
+}
+.about_section.one .paragraph p{
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 24px;
+}
+.about_section.two{
+    flex: 1 0 447px;
+    height: 468px;
+}
+.about_section.two .imgs{
+    position: relative;
+    height: inherit;
+    width: inherit;
+}
+.about_section.two .imgs img{
+    position: absolute;
+    width: 300px;
+    height: 336px;
+    border: 0;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: all .25 ease-in-out;
+}
+.about_section.two .imgs img:hover{
+    opacity: .9;
+}
+.about_section.two .imgs img:nth-child(1){
+    bottom: 0;
+    left: 10%;
+}
+.about_section.two .imgs img:nth-child(2){
+    top: 0;
+    right: 1%;
+}
+
+/* end of about section */
+
+/* start of footer section */
+.footer_content{
+    width: 220px;
+    min-height: 200px;
+    padding-left: 20px;
+}
+.footer_content.footer_logo{ 
+    padding-top: 50px;
+}
+.footer_content.footer_logo img{
+    width: 320px;
+    height: 100%;   
+    rotate: -90deg;
+    object-fit: contain;
+    margin-left: -140px;
+}
+.footer_content .title{
+    height: auto;
+    width: auto;
+}
+.footer_content h4{
+    font-family: var(--secondary-text-style) ;
+    font-size: 20px;
+    font-weight: 800 ;
+    color: var(--text-color);    
+}
+.footer_content .usefull_links{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 8px;
+    height: auto;
+    width: auto;
+    margin-top: 25px;
+}
+.footer_content .usefull_links li{
+    list-style: none;
+    font-family: var(--secondary-text-style);
+    font-size: 20px;
+    font-weight: 400;
+    color: #333; 
+    cursor: pointer;
+}
+.footer_content .usefull_links li a{
+   text-decoration: none;
+}
+
+/* end of footer section */
+
+/* start of booking section and page */
+.booking_hero{
+    position: relative;
+    width: inherit;
+    height: inherit;
+}
+.booking_hero{
+    position: relative;
+    width: inherit;
+    height: inherit;
+}
+.booking_hero img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: brightness(40%);
+    object-fit: cover;
+}
+.booking_hero .text{
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: auto;
+    padding: 0 20%;
+    z-index: 10;
+}
+.booking_hero .text h2{
+    color: var(--secondary-theme-color);
+    font-family: var(--primary-text-style);
+    font-size: 64px;
+    font-weight: 700; 
+}
+.booking_hero .text p{
+    color: #FFF;
+    font-family: var(--secondary-text-style);
+    font-size: 18px;
+    font-weight: 700; 
+}
